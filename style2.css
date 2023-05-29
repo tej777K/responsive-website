@@ -1,0 +1,218 @@
+body{
+    font: 15px/1.5em Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: color #f4f4f4;
+}
+
+/*global*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.button1{
+    height: 39px;
+    background: black;
+    color: white;
+    border: white 1px solid;
+    padding:0 20px 0 20px ;
+
+}
+.button1:hover{
+    color: black;
+    background:white;
+    font-size: bold;
+    border: black 1px solid;
+}
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*header*/
+
+header{
+    background: black;
+    color:#ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #ffffff 3px solid;
+   
+}
+
+header a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    
+}
+
+
+header li{
+    display: inline;
+    float: left;
+    padding: 0 20px 0 20px;
+
+}
+
+header #branding{
+    float:left;
+
+}
+header #branding h1{
+    margin: 0;
+    padding: 10px;
+}
+header nav{
+    float:right;
+    padding-top: 10px;
+    
+}
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: rgb(248, 190, 190);
+    font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+    min-height: 350px;
+    background:url('https://marketplace.canva.com/EAFFI2trtnE/1/0/1600w/canva-black-minimalist-motivation-quote-linkedin-banner-cqVV-6-1kOk.jpg') no-repeat -600px 0;
+    background-size: 2300px;
+    text-align: center;
+    color: #ffffff;
+  
+}
+#showcase h1{
+    margin-top: 70px;
+    min-height: 50px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 1.15;
+}
+#showcase p{
+    
+    font-size: 20px;
+}
+
+/*nweslwtterrs*/
+#nwesletters{
+    padding: 15px;
+    color: #ffffff;
+    background: #5f5f60;
+    border-top: #ffffff 3px solid;
+   
+}
+#nwesletters h1{
+    float: left;
+}
+#nwesletters form{
+    float: right;
+    padding-top: 20px;
+}
+#nwesletters input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*boxes*/
+
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+float: left;
+width: 33.33%;
+padding: 10px;
+text-align: center;
+box-sizing: border-box;
+}
+
+#boxes .box img{
+    width: 100px;
+
+}
+
+/*sidebar*/
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input,aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+
+}
+
+/*artical*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+/*serveses*/
+   
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    boder:#cccccc;
+    margin-bottom: 5px;
+    background: #a7a7a8;
+}
+
+ /*footer*/
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #35424a;
+    text-align: center;
+}
+
+
+/*media queries*/
+@media(max-width:768px){
+    header #branding, header nav , header nav li,#nweslwtters h1,#nwesletters form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding: 20px;
+
+    }
+    #showcase h1{
+        margin-top: 40px;
+
+    }
+    #nwesletters button{
+        display: block;
+        width: 100%;
+
+    }
+    #nwesletters form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
